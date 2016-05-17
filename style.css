@@ -32,3 +32,22 @@ h3 {
     margin-left:45px;
     margin-top:30px;
 }
+
+@media screen and (max-width:1200px) {
+    .result-space {
+padding:0;
+
+    width:100%;
+
+}
+
+h3 {
+margin-left:0;
+
+}
+
+.result-space h3 {
+    margin-top:20px;
+    font-size:1.2em;
+}
+}
