@@ -36,7 +36,7 @@ window.play = function (playerItem) {
       document.getElementById('result').innerHTML = "Computer chose paper. You win!";
   } 
   else if(playerItem === 'scissors' && computerItem === 'scissors') {
-      document.getElementById('result').innerHTML = "Computer chose scissors. It's a tie";
+      document.getElementById('result').innerHTML = "Computer chose scissors. It's a tie.";
   } 
   
 };
