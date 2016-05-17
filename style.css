@@ -2,6 +2,11 @@ body {
     background: url(IMG_0346.jpg);
 }
 
+.container {
+    height:100vh;
+    background-color: rgba(255,255,255, 0.3);;
+}
+
 .game-interface {
     margin-top:50px;
     text-align:center;
@@ -24,12 +29,12 @@ h4 {
     background-color: rgba(255,255,255, 0.3);;
     border-radius:15px;
     height:65px;
-    width:450px;
-    padding:0 10px;
+    width:500px;
+    padding:0 15px;
 }
 
 .result-space h3 {
-   margin-left:-18px;
+   margin-left:-10px;
    margin-top:18px;
 }
 
