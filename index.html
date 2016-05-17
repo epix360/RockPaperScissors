@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock! Paper! Scissors!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prepare for battle!</h1>
+        <div class="row">
+            <div class="game-interface">
+                <h4>Choose your weapon:</h4>
+                <div class="fightin-buttons">
+    <button class="btn btn-primary" onclick="play('rock')"><span class="fa fa-hand-rock-o"></span> Rock</button>
+    <button class="btn btn-primary" onclick="play('paper')"><span class="fa fa-hand-paper-o"></span> Paper</button>
+    <button class="btn btn-primary" onclick="play('scissors')"><span class="fa fa-hand-scissors-o"></span> Scissors</button>
+</div>
+   <div class= "col-xs-8 col-xs-pull-2 col-xs-push-2">
+        <div class="col-xs-2">
+        <h3>Result: </h3>
+        </div>
+        <div class="col-xs-10">
+        <div class="result-space">
+        <h3><span id="result"></span></h3><br>
+        </div>
+        </div>
+</div>
+<div class="col-xs-12">
+    <button class="btn btn-danger play-again" onclick="location.reload()">Play again?</button>
+</div>
+</div>
+         </div>
+         </div>
+    <script src="app.js"></script>
+</body>
+</html>

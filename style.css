@@ -1,0 +1,32 @@
+.game-interface {
+    margin-top:50px;
+    text-align:center;
+}
+
+h1 {
+    text-align:center;
+    margin-top:150px;
+}
+
+h4 {
+    margin-bottom:15px;
+}
+
+.result-space {
+    margin:10px;
+    border: 1px solid silver;
+    border-radius:15px;
+    height:65px;
+    width:500px;
+    padding:0 10px;
+}
+
+.result-space h3 {
+   margin-left:-18px;
+   margin-top:18px;
+}
+
+h3 {
+    margin-left:45px;
+    margin-top:30px;
+}
