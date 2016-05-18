@@ -15,9 +15,9 @@
             <div class="game-interface">
                 <h4>Choose your weapon:</h4>
                 <div class="fightin-buttons">
-    <button class="btn btn-primary" onclick="play('rock')"><span class="fa fa-hand-rock-o fa-2x"></span> Rock</button>
-    <button class="btn btn-primary" onclick="play('paper')"><span class="fa fa-hand-paper-o fa-2x"></span> Paper</button>
-    <button class="btn btn-primary" onclick="play('scissors')"><span class="fa fa-hand-scissors-o fa-2x"></span> Scissors</button>
+    <button class="btn btn-primary" onclick="game.play('rock')"><span class="fa fa-hand-rock-o fa-2x"></span> Rock</button>
+    <button class="btn btn-primary" onclick="game.play('paper')"><span class="fa fa-hand-paper-o fa-2x"></span> Paper</button>
+    <button class="btn btn-primary" onclick="game.play('scissors')"><span class="fa fa-hand-scissors-o fa-2x"></span> Scissors</button>
 </div>
    <div class= "col-md-8 col-md-pull-2 col-md-push-2 col-sm-12">
         <div class="col-md-2">
@@ -30,11 +30,16 @@
         </div>
 </div>
 <div class="col-xs-12">
-    <button class="btn btn-danger play-again" onclick="restart()">Play again?</button>
+    <button class="btn btn-danger play-again" onclick="game.start()">Play again?</button>
 </div>
 </div>
          </div>
          </div>
     <script src="app.js"></script>
+    <script>
+        var game = new RockPaperScissors();
+		
+		game.start();
+    </script>
 </body>
 </html>
