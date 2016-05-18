@@ -1,8 +1,11 @@
 var items = ['rock', 'paper', 'scissors'];
-var computerChoice = Math.floor(Math.random() * 3);
-var computerItem = items[computerChoice];
+var computerItem;
 
-console.log('Computer Item: ', computerItem);
+function loadComputerChoice() {
+    var computerChoice = Math.floor(Math.random() * 3);
+    computerItem = items[computerChoice];
+    console.log('Computer Item: ', computerItem);
+}
 
 window.play = function (playerItem) {
   
@@ -38,7 +41,14 @@ window.play = function (playerItem) {
   else if(playerItem === 'scissors' && computerItem === 'scissors') {
       document.getElementById('result').innerHTML = "Computer chose scissors. It's a tie.";
   } 
-  
 };
+
+window.restart = function () {
+    loadComputerChoice();
+    document.getElementById('result').innerHTML = "Computer is ready. Make your move.";
+};
+
+loadComputerChoice();
+
 
 

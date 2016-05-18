@@ -64,3 +64,16 @@ margin-left:0;
     font-size:1.2em;
 }
 }
+
+@media screen and (max-width:500px) {
+    .game-interface {
+    margin-top:0
+}
+
+h1 {
+    text-align:center;
+    margin-top:75px;
+    font-family: 'Faster One', sans-serif;
+    font-size: 5em;
+}
+}
